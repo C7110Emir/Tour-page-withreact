@@ -1,29 +1,48 @@
-import React from 'react'
-import style from "./Contentcard.module.css"
-import data from "../data.js"
+import React, { Component } from 'react';
+import cardStyle from './card.css';
 
+export default class TravelCard extends Component {
+  constructor() {
+    super();
+    this.state = {
+      hover: false,
+    };
+  }
 
-function Contentcards() {
+  overlayFunc = () => {
+    this.setState({ hover: true });
+  };
+  overlayFuncEx = () => {
+    this.setState({ hover: false });
+  };
+
+  render() {
+    console.log(this.props.title);
+    //const { isBoxVisible } = this.state.hover;
     return (
-        data.map((element) =>
-            <div className={style.container}>
-                <div className={style.card}>
-                    <div className={style.classtitle}>
+      <div>
+        <div
+          className={'container'}
+          onMouseEnter={this.overlayFunc}
+          onMouseLeave={this.overlayFuncEx}
+        >
+          <div className="title">
+            <h1>
+              {this.props.title === undefined ? 'Default' : this.props.title}
+            </h1>
+          </div>
 
-                    </div>
-                    <div className={style.cardbody}>
-                        <div className={style.image}>
+          <img
+            src={this.props.img}
+            className={`${this.state.hover ? 'filtered' : null}`}
+            alt=""
+          />
 
-                        </div>
-                        <div className={style.desc}>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        )
-    )
+          <p className={`overlay ${this.state.hover ? 'visible' : 'hidden'}`}>
+            {this.props.desc}
+          </p>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default Contentcards;

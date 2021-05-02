@@ -2,3 +2,9 @@
 body{
     background-color:rgba(175, 184, 241, 0.55)
 }
+
+.flexdesign{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
