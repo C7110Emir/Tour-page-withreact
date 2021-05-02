@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    margin:0px;
+    box-sizing:border-box;
+    overflow:auto;
+    font-family: 'Indie Flower', cursive;
+}
+.navbardiv{
+    background-color: black;
+    height:5rem;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.aboutus{
+    padding:1.4375rem;
+    
+}
+
+.foryou{
+    padding:1.4375rem;
+    
+}
+
+.services{
+    padding:1.4375rem;
+    
+}
+
+.blog{
+    padding:1.4375rem;
+    
+}
+
+.vlog{
+    padding:1.4375rem;
+    
+}
+.contact{
+    padding:1.4375rem;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+}
+
+
+.aboutus:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.foryou:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.services:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.blog:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.vlog:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.contact:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.tourplacesheader{
+    text-align: center;
+    margin-top:5rem;
+    font-size: 2.5rem;
+
+}
