@@ -1,9 +1,11 @@
 import React from 'react'
 import style from "./Contentcard.module.css"
+import data from "../data.js"
 
-function Contentcards(props) {
+
+function Contentcards() {
     return (
-        <div>
+        <div >
             
         </div>
     )

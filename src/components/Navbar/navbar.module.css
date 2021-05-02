@@ -3,7 +3,6 @@
 *{
     margin:0px;
     box-sizing:border-box;
-    overflow:auto;
     font-family: 'Indie Flower', cursive;
 }
 .navbardiv{
@@ -11,37 +10,38 @@
     height:5rem;
     color:white;
     display:flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items:center;
-    
+    overflow:none;    
 }
 
 .aboutus{
-    padding:1.4375rem;
+    padding:1.3rem;
     
 }
 
 .foryou{
-    padding:1.4375rem;
+    padding:1.3rem;
     
 }
 
 .services{
-    padding:1.4375rem;
+    padding:1.3rem;
     
 }
 
 .blog{
-    padding:1.4375rem;
+    padding:1.3rem;
     
 }
 
 .vlog{
-    padding:1.4375rem;
+    padding:1.3rem;
     
 }
 .contact{
-    padding:1.4375rem;
+    padding:1.3rem;
 }
 
 a{
@@ -83,6 +83,7 @@ a{
 .tourplacesheader{
     text-align: center;
     margin-top:5rem;
+    margin-bottom:5rem;
     font-size: 2.5rem;
 
 }
