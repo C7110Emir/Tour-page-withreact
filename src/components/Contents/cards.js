@@ -12,7 +12,6 @@ export default class Cards extends Component {
     ));
     return (
       <div className="cards">
-        <h1>POPULAR TOUR PLACES</h1>
         <div className="card-box">{arr}</div>
       </div>
     );
